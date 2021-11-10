@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout5"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.settings.settings_about">
+
+    <TextView
+        android:id="@+id/OurMission"
+        android:layout_width="197dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="104dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="110dp"
+        android:text="- Our Mission -"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/Description1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="69dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="64dp"
+        android:text="To provide you an All-in-One Application Monitor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/OurMission" />
+
+    <TextView
+        android:id="@+id/About"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="165dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="165dp"
+        android:text="About"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Description1" />
+
+    <TextView
+        android:id="@+id/Descriptionx"
+        android:layout_width="335dp"
+        android:layout_height="205dp"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="39dp"
+        android:text="We here at Slippery Rock strive for innovation. Computing enables us to solve the world's most complex and challenging problems. Technology demands us to adapt and learn while simultaneously revamping our skills as we go. We set out to make the most useful app on the market. Our App is more than just an app, it could easily become your new daily driver. Your phone activity is now all in one place. No longer will you have to scramble to find which pesky apps are draining your battery life. With a few clicks you're able to see real-time information on the apps you use most!"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/About" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="28dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title_developers"
+        app:srcCompat="@drawable/ic_baseline_account_circle_24"
+        tools:src="@drawable/ic_baseline_account_circle_24" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="49dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="48dp"
+        app:layout_constraintEnd_toStartOf="@+id/imageView4"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/title_developers"
+        app:srcCompat="@drawable/ic_baseline_account_circle_25"
+        tools:src="@drawable/ic_baseline_account_circle_25" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="96dp"
+        android:layout_marginEnd="37dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Descriptionx"
+        app:srcCompat="@drawable/ic_baseline_account_circle_26"
+        tools:src="@drawable/ic_baseline_account_circle_26" />
+
+    <TextView
+        android:id="@+id/Name1"
+        android:layout_width="82dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="36dp"
+        android:text="Christian Carr"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <TextView
+        android:id="@+id/Name2"
+        android:layout_width="88dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="45dp"
+        android:text="Jeffrey McFarland"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/Name3"
+        app:layout_constraintStart_toEndOf="@+id/Name1"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <TextView
+        android:id="@+id/Name3"
+        android:layout_width="85dp"
+        android:layout_height="43dp"
+        android:layout_marginEnd="35dp"
+        android:text="Jordan McCall"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
+    <TextView
+        android:id="@+id/Title1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:text="UI/UX Designer"
+        android:textColor="#FF6600"
+        android:textSize="12sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Name1" />
+
+    <TextView
+        android:id="@+id/Title2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="36dp"
+        android:text="Backend Designer"
+        android:textColor="#4CAF50"
+        android:textSize="12sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toStartOf="@+id/Title3"
+        app:layout_constraintStart_toEndOf="@+id/Title1"
+        app:layout_constraintTop_toBottomOf="@+id/Name2" />
+
+    <TextView
+        android:id="@+id/Title3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="25dp"
+        android:text="Backend Designer"
+        android:textAllCaps="false"
+        android:textColor="#2196F3"
+        android:textSize="12sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Name3" />
+
+    <TextView
+        android:id="@+id/title_developers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="114dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="114dp"
+        android:text="--Developers--"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Descriptionx" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

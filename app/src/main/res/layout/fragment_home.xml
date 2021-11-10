@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.HomeFragment">
+
+    <TextView
+        android:id="@+id/text_home"
+        android:layout_width="1dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="368dp"
+        android:layout_marginTop="680dp"
+        android:layout_marginEnd="42dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/title_batteryscore_home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Battery Score"
+        android:textSize="24sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/score_home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="67"
+        android:textAlignment="center"
+        android:textColor="#2196F3"
+        android:textSize="100dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title_batteryscore_home" />
+
+    <TextView
+        android:id="@+id/title_refresh_home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="161dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="2dp"
+        android:text="Tap to Refresh"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toStartOf="@+id/refresh_button_home"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/score_home" />
+
+    <ImageButton
+        android:id="@+id/refresh_button_home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="135dp"
+        android:background="@color/colorButton"
+        android:src="@drawable/ic_baseline_refresh_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/title_refresh_home"
+        app:layout_constraintTop_toBottomOf="@+id/score_home" />
+
+    <ProgressBar
+        android:id="@+id/progress_memory"
+        style="?android:progressBarStyleHorizontal"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="46dp"
+        android:layout_marginTop="43dp"
+        android:layout_marginEnd="53dp"
+        android:progress="80"
+        android:progressDrawable="@drawable/circle"
+        android:progressTint="#FF5722"
+        app:layout_constraintBottom_toTopOf="@+id/title_memory_home"
+        app:layout_constraintEnd_toStartOf="@+id/AppHome_Pic"
+        app:layout_constraintStart_toEndOf="@+id/batteryImage"
+        app:layout_constraintTop_toBottomOf="@+id/title_refresh_home" />
+
+    <TextView
+        android:id="@+id/title_battery_home"
+        android:layout_width="100dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginEnd="37dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Battery"
+        android:textAlignment="center"
+        android:textColor="#4CAF50"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintEnd_toStartOf="@+id/title_memory_home"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/batteryImage" />
+
+    <TextView
+        android:id="@+id/title_memory_home"
+        android:layout_width="80dp"
+        android:layout_height="25dp"
+        android:layout_marginEnd="53dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Memory"
+        android:textAlignment="center"
+        android:textColor="#FF5722"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintEnd_toStartOf="@+id/title_top_app_home"
+        app:layout_constraintStart_toEndOf="@+id/title_battery_home"
+        app:layout_constraintTop_toBottomOf="@+id/progress_memory" />
+
+    <TextView
+        android:id="@+id/title_top_app_home"
+        android:layout_width="80dp"
+        android:layout_height="25dp"
+        android:layout_marginEnd="25dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Top_App"
+        android:textAlignment="center"
+        android:textColor="#2196F3"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/title_memory_home"
+        app:layout_constraintTop_toBottomOf="@+id/AppHome_Pic" />
+
+    <TextView
+        android:id="@+id/battery_percentage_home"
+        android:layout_width="100dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="33dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="40%"
+        android:textAlignment="center"
+        android:textColor="#4CAF50"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/memory_percentage"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title_battery_home" />
+
+    <TextView
+        android:id="@+id/memory_percentage"
+        android:layout_width="80dp"
+        android:layout_height="20dp"
+        android:layout_marginEnd="42dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="80%"
+        android:textAlignment="center"
+        android:textColor="#FF5722"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintEnd_toStartOf="@+id/top_app_percentage"
+        app:layout_constraintStart_toEndOf="@+id/battery_percentage_home"
+        app:layout_constraintTop_toBottomOf="@+id/title_memory_home" />
+
+    <TextView
+        android:id="@+id/top_app_percentage"
+        android:layout_width="100dp"
+        android:layout_height="20dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="357 hr 55 min"
+        android:textAlignment="center"
+        android:textColor="#2196F3"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/memory_percentage"
+        app:layout_constraintTop_toBottomOf="@+id/title_top_app_home" />
+
+    <TextView
+        android:id="@+id/description_graph_home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="127dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="128dp"
+        android:text="----HardDrive space(GB)----"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/memory_percentage" />
+
+    <com.anychart.AnyChartView
+        android:id="@+id/storageChart"
+        android:layout_width="240dp"
+        android:layout_height="225dp"
+        android:layout_marginStart="85dp"
+        android:layout_marginEnd="86dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/description_graph_home" />
+
+    <ImageView
+        android:id="@+id/batteryImage"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="47dp"
+        android:layout_marginTop="260dp"
+        android:src="@drawable/battery_100"
+        app:layout_constraintBottom_toTopOf="@+id/title_battery_home"
+        app:layout_constraintEnd_toStartOf="@+id/progress_memory"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/AppHome_Pic"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="260dp"
+        android:layout_marginEnd="26dp"
+        android:src="@drawable/ic_launcher"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/progress_memory"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

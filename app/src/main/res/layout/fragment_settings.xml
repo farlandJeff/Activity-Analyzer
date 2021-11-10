@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.settings.SettingsFragment">
+
+
+    <Button
+        android:id="@+id/Units"
+        android:layout_width="270dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="14dp"
+        android:background="@color/colorButton"
+        android:fontFamily="sans-serif-medium"
+        android:text="Units                                 "
+        android:textAlignment="center"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toStartOf="@+id/Arrow1"
+        app:layout_constraintStart_toEndOf="@+id/Tag"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/Notifications"
+        android:layout_width="270dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="14dp"
+        android:background="@color/colorButton"
+        android:text="Notifications                 "
+        app:layout_constraintEnd_toStartOf="@+id/Arrow3"
+        app:layout_constraintStart_toEndOf="@+id/Bell"
+        app:layout_constraintTop_toBottomOf="@+id/Units" />
+
+    <Button
+        android:id="@+id/HelpSupport"
+        android:layout_width="270dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="14dp"
+        android:background="@color/colorButton"
+        android:text="     Help and Support              "
+        app:layout_constraintEnd_toStartOf="@+id/Arrow4"
+        app:layout_constraintStart_toEndOf="@+id/Support"
+        app:layout_constraintTop_toBottomOf="@+id/Notifications" />
+
+    <Button
+        android:id="@+id/About"
+        android:layout_width="270dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="14dp"
+        android:background="@color/colorButton"
+        android:text="About                                   "
+        app:layout_constraintEnd_toStartOf="@+id/Arrow5"
+        app:layout_constraintStart_toEndOf="@+id/Info"
+        app:layout_constraintTop_toBottomOf="@+id/HelpSupport" />
+
+    <ImageView
+        android:id="@+id/Arrow1"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="28dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_baseline_keyboard_arrow_right_24"
+        app:tint="@color/textColor" />
+
+    <ImageView
+        android:id="@+id/Arrow3"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="7dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Arrow1"
+        app:srcCompat="@drawable/ic_baseline_keyboard_arrow_right_24"
+        app:tint="@color/textColor" />
+
+    <ImageView
+        android:id="@+id/Arrow4"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="7dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Arrow3"
+        app:srcCompat="@drawable/ic_baseline_keyboard_arrow_right_24"
+        app:tint="@color/textColor" />
+
+    <ImageView
+        android:id="@+id/Arrow5"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="6dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Arrow4"
+        app:srcCompat="@drawable/ic_baseline_keyboard_arrow_right_24"
+        app:tint="@color/textColor" />
+
+    <ImageView
+        android:id="@+id/Tag"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="28dp"
+        app:layout_constraintEnd_toStartOf="@+id/Units"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_outline_local_offer_24"
+        app:tint="@color/textColor" />
+
+    <ImageView
+        android:id="@+id/Bell"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="7dp"
+        app:layout_constraintEnd_toStartOf="@+id/Notifications"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Tag"
+        app:srcCompat="@drawable/ic_baseline_notifications_none_24"
+        app:tint="@color/textColor" />
+
+    <ImageView
+        android:id="@+id/Support"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="7dp"
+        app:layout_constraintEnd_toStartOf="@+id/HelpSupport"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Bell"
+        app:srcCompat="@drawable/ic_baseline_menu_book_24"
+        app:tint="@color/textColor" />
+
+    <ImageView
+        android:id="@+id/Info"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="6dp"
+        app:layout_constraintEnd_toStartOf="@+id/About"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Support"
+        app:srcCompat="@drawable/ic_outline_info_24"
+        app:tint="@color/textColor" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

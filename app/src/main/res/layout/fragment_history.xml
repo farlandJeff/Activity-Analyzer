@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.history.HistoryFragment">
+
+    <TextView
+        android:id="@+id/text_history"
+        android:layout_width="1dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:gravity="center_horizontal"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.953"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.977" />
+
+
+    <com.jjoe64.graphview.GraphView
+        android:id="@+id/graphhistory"
+        android:layout_width="363dp"
+        android:layout_height="184dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/underline" />
+
+    <TextView
+        android:id="@+id/UsageText"
+        android:layout_width="350dp"
+        android:layout_height="110dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="43dp"
+        android:layout_marginEnd="29dp"
+        android:layout_marginBottom="3dp"
+        android:text="Utilize the buttons below to see your Usage History. The three options below will send an update to your histroy graph showing when you either had Low, Medium, or High Usage"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintBottom_toTopOf="@+id/underline5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/graphhistory" />
+
+    <Button
+        android:id="@+id/lowbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="9dp"
+        android:text="Low Usage"
+        app:layout_constraintEnd_toStartOf="@+id/mediumbutton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/underline5" />
+
+    <Button
+        android:id="@+id/weekButtonHistory"
+        android:layout_width="65dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="77dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="31dp"
+        android:text="Week"
+        android:textSize="8sp"
+        app:layout_constraintEnd_toStartOf="@+id/monthButtonHistory"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/graphhistory" />
+
+    <Button
+        android:id="@+id/monthButtonHistory"
+        android:layout_width="65dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="36dp"
+        android:text="Month"
+        android:textSize="8sp"
+        app:layout_constraintEnd_toStartOf="@+id/yearButtonHistory"
+        app:layout_constraintStart_toEndOf="@+id/weekButtonHistory"
+        app:layout_constraintTop_toBottomOf="@+id/graphhistory" />
+
+    <Button
+        android:id="@+id/yearButtonHistory"
+        android:layout_width="65dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="72dp"
+        android:text="Year"
+        android:textSize="8sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/monthButtonHistory"
+        app:layout_constraintTop_toBottomOf="@+id/graphhistory" />
+
+    <Button
+        android:id="@+id/mediumbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="6dp"
+        android:text="Medium Usage"
+        app:layout_constraintEnd_toStartOf="@+id/highbutton"
+        app:layout_constraintStart_toEndOf="@+id/lowbutton"
+        app:layout_constraintTop_toBottomOf="@+id/underline5" />
+
+    <Button
+        android:id="@+id/highbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="31dp"
+        android:text="High Usage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/mediumbutton"
+        app:layout_constraintTop_toBottomOf="@+id/underline5" />
+
+    <Button
+        android:id="@+id/gotounits"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:background="@color/colorButton"
+        android:text="Units Page"
+        app:layout_constraintEnd_toStartOf="@+id/unitimagehistory"
+        app:layout_constraintStart_toEndOf="@+id/histroysnapshotpic"
+        app:layout_constraintTop_toBottomOf="@+id/descriptionscreenshot" />
+
+    <TextView
+        android:id="@+id/descriptionscreenshot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="15dp"
+        android:text="- Screenshot or change your viewmodel - "
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.395"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/underline6" />
+
+    <ImageView
+        android:id="@+id/unitimagehistory"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="20dp"
+        android:src="@drawable/ic_outline_local_offer_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/gotounits"
+        app:layout_constraintTop_toBottomOf="@+id/descriptionscreenshot"
+        app:tint="@color/textColor" />
+
+    <TextView
+        android:id="@+id/descriptionhistory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="44dp"
+        android:text="View Battery History on your android phone"
+        android:textSize="18sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/underline"
+        android:layout_width="350dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="37dp"
+        android:background="@android:color/darker_gray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/descriptionhistory" />
+
+    <View
+        android:id="@+id/underline4"
+        android:layout_width="350dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="31dp"
+        android:background="@android:color/darker_gray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/weekButtonHistory" />
+
+    <View
+        android:id="@+id/underline5"
+        android:layout_width="300dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="56dp"
+        android:background="@android:color/darker_gray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/UsageText" />
+
+    <View
+        android:id="@+id/underline6"
+        android:layout_width="300dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="56dp"
+        android:background="@android:color/darker_gray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lowbutton" />
+
+    <Button
+        android:id="@+id/snapbuttonhistory"
+        android:layout_width="150dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/colorButton"
+        android:text="Take SnapShot of History Graph"
+        app:layout_constraintEnd_toStartOf="@+id/histroysnapshotpic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/descriptionscreenshot" />
+
+    <ImageView
+        android:id="@+id/histroysnapshotpic"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/ic_baseline_mobile_screen_share_27"
+        app:layout_constraintStart_toEndOf="@+id/snapbuttonhistory"
+        app:layout_constraintTop_toBottomOf="@+id/descriptionscreenshot" />
+
+    <ImageView
+        android:id="@+id/dropShadowHistory"
+        android:layout_width="411dp"
+        android:layout_height="465dp"
+        android:rotation="180"
+        android:src="@drawable/shadow_down"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/underline4" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

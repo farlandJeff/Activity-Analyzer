@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout3"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.settings.settings_notifications">
+
+    <TextView
+        android:id="@+id/description_notifications"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:text="----Utilize the checkboxes to turn ON/OFF Notifications----"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/usage_Pic"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="23dp"
+        android:src="@drawable/ic_baseline_data_usage_24"
+        app:tint="@color/textColor"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/description_notifications" />
+
+    <ImageView
+        android:id="@+id/battery_Pic"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="13dp"
+        android:src="@drawable/ic_outline_battery_alert_24"
+        app:tint="@color/textColor"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/usage_Pic" />
+
+    <TextView
+        android:id="@+id/usage_alerts"
+        android:layout_width="218dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="27dp"
+        android:ems="10"
+        android:text="Usage Alerts"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/usage_Pic"
+        app:layout_constraintTop_toBottomOf="@+id/description_notifications" />
+
+    <TextView
+        android:id="@+id/battery_alerts"
+        android:layout_width="218dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="39dp"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:text="Battery Alerts"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/battery_Pic"
+        app:layout_constraintTop_toBottomOf="@+id/usage_alerts" />
+
+    <CheckBox
+        android:id="@+id/batterycheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:buttonTint="#595959"
+        android:checked="false"
+        app:layout_constraintStart_toEndOf="@+id/battery_alerts"
+        app:layout_constraintTop_toBottomOf="@+id/usagecheckBox" />
+
+    <CheckBox
+        android:id="@+id/usagecheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="34dp"
+        android:buttonTint="#595959"
+        android:checked="false"
+        app:layout_constraintStart_toEndOf="@+id/usage_alerts"
+        app:layout_constraintTop_toBottomOf="@+id/description_notifications" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

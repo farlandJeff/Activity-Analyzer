@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout4"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.settings.settings_help">
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="387dp"
+        tools:layout_editor_absoluteY="280dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/title_helpsupport"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="72dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="88dp"
+                android:text="-Developers Guide-"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/title_home_helpsupport"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="124dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="126dp"
+                android:text="-Home Page-"
+                android:textAlignment="center"
+                android:textColor="#FF5722"
+                android:textSize="18sp"
+                android:textStyle="bold|italic" />
+
+            <TextView
+                android:id="@+id/descriptionhome_helpsupport"
+                android:layout_width="335dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="27dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="27dp"
+                android:text="The Home Page is a quick way to see at a glance your phone's usage. Five elements are displayed. 1.) Score - A score given to the user out of 100 based off of their phone usage/battery life. 2 - RealTime Battery Usage  3 - A Progress bar that will show your memory usage. 4 - Your most used Application 5.) Storage Chart - Displays Free Space and Used Space on your device."
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/title_scorehelpsupport"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="124dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="126dp"
+                android:text="-Score-"
+                android:textAlignment="center"
+                android:textColor="#FF5722"
+                android:textSize="18sp"
+                android:textStyle="bold|italic" />
+
+            <TextView
+                android:id="@+id/descriptionscore_helpsupport"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="27dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="27dp"
+                android:text="A score given to the user out of 100 based off of their phone usage/battery life. The attributes that affect your usage are: Battery Life,Status(Cold,Overheat,Fail), Memory Usage and Storage. To obtain a perfect score the user's Battery life has to be above 90%, Memory percentage below 60%, have more Free Space than Used Space and either have their battery plugged in or fully charged. Failing to do these things will subtract from your overall score by intervals of 10(for Battery Life/Status) and 20(for Storage)."
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/title_powerhelpsupport"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="124dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="126dp"
+                android:text="-Power Usage Page-"
+                android:textColor="#2196F3"
+                android:textSize="18sp"
+                android:textStyle="bold|italic" />
+
+            <TextView
+                android:id="@+id/descriptionpower_helpsupport"
+                android:layout_width="335dp"
+                android:layout_height="85dp"
+                android:layout_marginStart="27dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="27dp"
+                android:text="Here you will find a graph of your power usage and the apps you use the most. You can also easily snapshot your power usage graph, download and or upload to any of your other favorite applications like email or sms."
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/title_historyhelpsupport"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="148dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="149dp"
+                android:text="-History Page-"
+                android:textColor="#4CAF50"
+                android:textSize="18sp"
+                android:textStyle="bold|italic" />
+
+            <TextView
+                android:id="@+id/descriptionhistory_helpsupport"
+                android:layout_width="335dp"
+                android:layout_height="104dp"
+                android:layout_marginStart="27dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="27dp"
+                android:text="The graph allows you to view your past battery history. The top nav bar will change colors based on your usage. Green is good, Yellow is average, and Red is poor. You can also easily access your view models with the button at the bottom of the page or snapshot your history graph."
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/title_settingshelpsupport"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="145dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="143dp"
+                android:text="-Settings Page-"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:textStyle="bold|italic" />
+
+            <TextView
+                android:id="@+id/descriptionsettings_helpsupport"
+                android:layout_width="335dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="27dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="27dp"
+                android:text="The settings page contains all of the branching pages not accessible by the navigation bar."
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/title_unitshelpsupport"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="145dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="143dp"
+                android:text="-Units Page-"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:textStyle="bold|italic" />
+
+            <TextView
+                android:id="@+id/descriptionunits_helpsupport"
+                android:layout_width="match_parent"
+                android:layout_height="193dp"
+                android:layout_marginStart="27dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="27dp"
+                android:text="The Units Tab is used to change certain attributes of the application. You can change the Electrical Units, Time Interval and Switch ON/OFF DarkMode. There's three options for Electrical Units, Watts, Amps and Volts. Once selected, the power usage and history graphs will be updated. Changing the time interval to a higher number will give you a more accurate graph, this is because when the graph is on a slower thread it consumes less battery life. The last option is Dark Mode, this will switch the theme of the entire app to a darker theme and is useful for night time settings."
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/title_powerhelpsupport3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="124dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="126dp"
+                android:text="-Notifications Page-"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:textStyle="bold|italic" />
+
+            <TextView
+                android:id="@+id/descriptionnotifications_helpsupport"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginStart="27dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="27dp"
+                android:text="The notifications tab allows you to easily switch on and off usage alerts and or battery alerts. When switching on usage alerts, you'll be notified anytime your usage exceeded our threshold. When switching on battery alerts, you'll be notified anytime your battery's status has been changed or altered. Our app detects when your battery is Cold,Overheated, Failing or is below 20%"
+                android:textAlignment="center" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
