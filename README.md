@@ -1,9 +1,16 @@
 # Activity Analyzer
 
-Android application that analyzes the device to give users information like...
-- Battery Consumption
-- App Usage
-- Remaining Storage
-- Memory Allocation
+All-in-one activity monitor for Android devices built with:
+- Java
+- Android APIs
+- XML
+- Android Studio
 
-Developed using Android Studio
+Notable features:
+- Customizable GUI.
+- Monitor your battery usage.
+- View your most used applications and how much they are used.
+- Notifications for what battery changes.
+- Feedback on your usage and history.
+
+![Screenshot](https://jeffreymcfarland.com/img/android.png)
